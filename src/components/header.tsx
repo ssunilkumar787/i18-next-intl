@@ -1,9 +1,11 @@
+"use client";
+
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import LocalSwitcher from "./local-switcher";
 
 export default function Header() {
-  const t = useTranslations("Navigation");
+  const t = useTranslations("Navigation"); // Using the 'Navigation' translation namespace
 
   return (
     <header className="p-4">
